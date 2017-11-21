@@ -1,5 +1,10 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+
+
+
 /**
  * Represents a video opengraph type
  * @author Damian Mooyman

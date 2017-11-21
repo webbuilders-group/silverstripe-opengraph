@@ -1,5 +1,8 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+
 /**
  * Description of OGGenders
  *

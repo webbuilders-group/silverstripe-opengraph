@@ -1,5 +1,10 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+
+
+
 /**
  * Represents a music opengraph type
  * Websites must be whitelisted by facebook to be correctly handled using this scheme

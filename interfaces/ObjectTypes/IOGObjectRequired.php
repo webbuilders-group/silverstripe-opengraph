@@ -1,5 +1,10 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+
+
+
 /**
  * Interface encompassing required fields for an opengraph object.
  * This interface may be used on any data object that explicitly defines mandatory methods, as opposed to 

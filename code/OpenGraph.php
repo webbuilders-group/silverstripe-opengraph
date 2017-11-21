@@ -1,5 +1,14 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+
+use SilverStripe\Core\Config\Config;
+use TractorCow\OpenGraph\OpenGraph;
+use SilverStripe\SiteConfig\SiteConfig;
+
+
+
 /**
  * Simple wrapper for opengraph settings
  */
@@ -38,9 +47,9 @@ class OpenGraph {
 	 * @return string the Open Graph type identifier
 	 */
 	public static function get_object_type($object) {
-		
+
 		$types = self::get_config('types');
-		
+
 		foreach ($types as $type => $details) {
 			$interface = $details['interface'];
 			if ($object instanceof $interface) return $type;
@@ -53,7 +62,7 @@ class OpenGraph {
 	 * @return string Value of the configured field
 	 */
 	public static function get_config($field) {
-		return Config::inst()->get('OpenGraph', $field);
+		return Config::inst()->get(OpenGraph::class, $field);
 	}
 
 	/**
@@ -62,8 +71,8 @@ class OpenGraph {
 	 * @param string $field
 	 * @param string $value 
 	 */
-	public static function set_config($field, $value = 'SiteConfig') {
-		Config::inst()->update('OpenGraph', $field, $value);
+	public static function set_config($field, $value = SiteConfig::class) {
+		Config::inst()->update(OpenGraph::class, $field, $value);
 	}
 	
 	/**

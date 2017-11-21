@@ -3,7 +3,7 @@ name: 'opengraphextensions'
 ---
 Page:
   extensions:
-    - 'OpenGraphObjectExtension'
-SiteConfig:
+    - TractorCow\OpenGraph\OpenGraphObjectExtension
+SilverStripe\SiteConfig\SiteConfig:
   extensions:
-    - 'OpenGraphSiteConfigExtension'
+    - TractorCow\OpenGraph\OpenGraphSiteConfigExtension

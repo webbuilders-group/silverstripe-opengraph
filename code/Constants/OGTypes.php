@@ -1,5 +1,7 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
 /**
  * Defines the list of standard opengraph object types.
  * User types may be substitude in place of any of these for the og:type property,

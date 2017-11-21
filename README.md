@@ -16,8 +16,7 @@ with Facebook.
 
 ## Requirements
 
- * SilverStripe 3.1
- * PHP 5.3
+ * SilverStripe 4
 
 ## Installation Instructions
 

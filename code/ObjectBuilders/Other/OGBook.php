@@ -1,5 +1,10 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+
+
+
 class OGBook extends OpenGraphBuilder
 {
 

@@ -1,9 +1,14 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+
+
+
 /**
  * @author Damo
  */
-abstract class OGVideo extends OpenGraphBuilder
+class OGVideo extends OpenGraphBuilder
 {
 	
 	/**

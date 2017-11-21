@@ -1,5 +1,10 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+use TractorCow\OpenGraph\OGMusic;
+use TractorCow\OpenGraph\IOGMusicRadioStation;
+
 class OGMusicRadioStation extends OGMusic
 {
 	protected function appendRadioStationTags(&$tags, IOGMusicRadioStation $station)

@@ -1,5 +1,9 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+use TractorCow\OpenGraph\OGMusic;
+
 class OGMusicSong extends OGMusic
 {
 	/**

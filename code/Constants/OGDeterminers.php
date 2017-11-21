@@ -1,5 +1,7 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
 /**
  * @author Damian Mooyman
  */

@@ -1,9 +1,26 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+use SilverStripe\ORM\DataObject;
+
+
+
+
+
+use DateTime;
+use SilverStripe\ORM\SS_List;
+use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\Control\HTTP;
+use SilverStripe\Core\Convert;
+use SilverStripe\Assets\File;
+
+
+
 /**
  * @author Damian Mooyman
  */
-class OpenGraphBuilder extends Object implements IOpenGraphObjectBuilder
+class OpenGraphBuilder extends DataObject implements IOpenGraphObjectBuilder
 {
 
 	protected $mimeTypes = null;

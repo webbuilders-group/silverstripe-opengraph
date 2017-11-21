@@ -1,5 +1,10 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+use TractorCow\OpenGraph\IOGMusicPlaylist;
+
+
 class OGMusicPlaylist extends OGMusic
 {
 	protected function appendPlaylistTags(&$tags, IOGMusicPlaylist $playlist)

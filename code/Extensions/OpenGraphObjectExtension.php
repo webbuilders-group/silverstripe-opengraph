@@ -1,5 +1,23 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+use SilverStripe\ORM\FieldType\DBText;
+use SilverStripe\SiteConfig\SiteConfig;
+use SilverStripe\Control\Director;
+use SilverStripe\i18n\i18n;
+use SilverStripe\CMS\Model\SiteTreeExtension;
+use TractorCow\OpenGraph\IOGObjectExplicit;
+use TractorCow\OpenGraph\IOGMusic;
+use TractorCow\OpenGraph\IOGVideo;
+use TractorCow\OpenGraph\IOGArticle;
+use TractorCow\OpenGraph\IOGBook;
+use TractorCow\OpenGraph\IOGProfile;
+use TractorCow\OpenGraph\IOGWebsite;
+use TractorCow\OpenGraph\OGTypes;
+use TractorCow\OpenGraph\OpenGraph;
+use TractorCow\OpenGraph\OGDeterminers;
+
 /**
  * Adds open graph functionality to a page or data object
  *
@@ -134,7 +152,7 @@ class OpenGraphObjectExtension extends SiteTreeExtension implements IOGObjectExp
 		
 		// Intelligent fallback for SiteTree instances
 		$contentField = $this->owner->dbObject('Content');
-		if ($contentField instanceof Text) {
+		if ($contentField instanceof DBText) {
 			return $contentField->Summary(100);
 		}
 	}

@@ -1,5 +1,10 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+
+
+
 /**
  * Defines properties of the application
  * @author Damian Mooyman

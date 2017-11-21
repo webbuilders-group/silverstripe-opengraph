@@ -1,5 +1,11 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+use TractorCow\OpenGraph\OpenGraphBuilder;
+use TractorCow\OpenGraph\IOGArticle;
+
+
 class OGArticle extends OpenGraphBuilder
 {
 

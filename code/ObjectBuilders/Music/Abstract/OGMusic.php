@@ -1,11 +1,17 @@
 <?php
 
+namespace TractorCow\OpenGraph;
+
+use TractorCow\OpenGraph\OpenGraphBuilder;
+use TractorCow\OpenGraph\IOGSongAlbum;
+use TractorCow\OpenGraph\IOGMusicSong;
+
 /**
  * Description of OGMusic
  *
  * @author Damo
  */
-abstract class OGMusic extends OpenGraphBuilder
+class OGMusic extends OpenGraphBuilder
 {
 	
 	/**
